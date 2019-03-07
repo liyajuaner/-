@@ -1,0 +1,49 @@
+/* 搜索框样式 */
+.ui-search{
+    background:url(../images/ui-search.jpg) center no-repeat;
+    position: relative;
+    font-size: 14px;
+    color:#fff
+}
+.ui-search .ui-search-selected{
+    width: 70px;
+    height: 38px;
+    line-height: 38px;
+    text-indent: 14px;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.ui-search .ui-search-list{
+    display:none;
+    width: 67px;
+    line-height: 24px;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.2);
+    position: absolute;
+    left: 1px;
+    top: 37px;
+    z-index: 2;
+}
+.ui-search .ui-search-list a{
+    display: block;
+    color:#A5a2a2;
+    text-align: center;
+}
+.ui-search .ui-search-list a:hover{
+    background: #ebeef5;
+}
+.ui-search .ui-search-input{
+    width:208px;
+    height:26px;
+    line-height: 26px;
+    font-size: 13px;
+    position: absolute;
+    top:5px;
+    left:73px;
+    color:#a5a2a2;
+}
+
+
+
+
