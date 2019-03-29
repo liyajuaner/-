@@ -56,7 +56,7 @@ select,input{
     line-height: 36px;
     min-width:80px;
     text-align: center;
-    color:#fff
+    color:#fff;
 }
 .nav .menu{
     width:130px;

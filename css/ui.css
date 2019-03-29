@@ -43,7 +43,170 @@
     left:73px;
     color:#a5a2a2;
 }
+/* ui-menu样式编写 */
+.ui-menu-item{
+    height:22px;
+    line-height:22px;
+    padding:8px 9px 9px 6px;
+    margin-left:2px;
+}
+.ui-menu-item:hover{
+    background-color: #fff;
+}
+.ui-menu-item .ui-department{
+    float: left;
+    line-height:22px;
+    height:22px;
+    position:relative;
+    padding-left: 30px;
+    font-size: 14px;
+    color:#fff;
+}
+.ui-menu-item .ui-department:before{
+    content:' ';
+    display: block;
+    width: 22px;
+    height: 21px;
+    position: absolute;
+    top:1px;
+    left:0;
+    background: url(../images/icon-menu.jpg) -22px 0 no-repeat;
+}
+.ui-menu-item .ui-disease{
+    float:right;
+    font-size: 12px;
+    color:#d7f3ff;
+    padding-left:5px;
+}
+.ui-menu-item :hover .ui-menu-item .ui-department:before{
+    background-position: 0 0;
+}
+.ui-menu-item :hover .ui-department{
+    color:#333;
+}
+.ui-menu-item :hover .ui-menu-item .ui-disease{
+    color:#868686;
+}
+.ui-menu-item :hover .ui-menu-item .ui-menu-item-detail{
+    display: block;
+}
+.ui-menu-item-detail{
+    display: none;
+    width:500px;
+    height:392px;
+    padding:20px 10px 10px 29px;
+    position: absolute;
+    top:0;
+    left:190px;
+    background: #fff;
+    box-shadow: 5px 5px 2px rgba(0,0,0,.1)
+}
+.ui-detail-group{
+    padding-bottom: 20px;
+    text-align: left;
+}
+.ui-detail-group .ui-detail-group-caption{
+    width:100%;
+    height:34px;
+    line-height: 34px;
+    display: block;
+    color:#666;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ui-detail-group .ui-detail-group-list{
+    line-height: 23px;
+}
+.ui-detail-group .ui-detail-group-list a{
+    display: inline-block;
+    color:#868686;
+    font-size: 8px;
+    padding-bottom:5px;
+    padding-right: 12px;
+}
+.ui-detail-group .ui-detail-group-list a:after{
+    content:'  |';
+    padding-left:8px;
+    color:#eee;
+}
+/* 回到顶部 */
+.ui-backTop{
+    display: none;
+    position: fixed;
+    bottom:2px;
+    right:2px;
+    z-index: 9;
+    width:40px;
+    height: 40px;
+    color:#fff;
+    background:rgba(102,102,102,.9) url(../images/icon-go-up.png) center no-repeat;
+}
+.ui-backTop:hover{
+    background:rgba(102,102,102,.9);
+}
+.ui-backTop:hover:after{
+    content:'回到顶部';
+    display: block;
+    line-height: 20px;
+    text-align: center;
+}
+/* 轮播组件 */
+.ui-slide{
+    width:544px;
+    height: 414px;
+    position: relative;
+    overflow: hidden;
+}
+.ui-slide-wrap{
+    width:9999px;
+    height: 414px;
+    position: absolute;
+    left: 0;
+	right: 0;
+	transition: all .5s;
+}
+.ui-slide-wrap .item{
+    display: block;
+	float: left;
+    width: 544px;
+	height: 414px;
+}
 
-
-
-
+.ui-slide-arrow{
+    width:544px;
+    height:40px;
+    position: absolute;
+    top: 50%;
+    margin-top:-20px;
+}
+.ui-slide-arrow .item{
+    width:40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    background: url(../images/ui-slider-arrow.png) no-repeat;
+}
+.ui-slide-arrow .left{
+    left: 0;
+}
+.ui-slide-arrow .right{
+    right: 0;
+    background-position: -40px 0;
+}
+.ui-slide-process{
+    width:544px;
+    height: 12px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+.ui-slide-process .item{
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    background: url(../images/ui-slider-process.png) no-repeat;
+}
+.ui-slide-process .item:hover{
+    background-position: -23px 0;
+}
